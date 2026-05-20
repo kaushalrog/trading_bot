@@ -1,0 +1,40 @@
+2026-05-20 23:26:22 INFO     ==================================================
+2026-05-20 23:26:22 INFO     Trading Bot CLI started
+2026-05-20 23:26:22 INFO     ==================================================
+2026-05-20 23:26:22 INFO     Input validation passed.
+2026-05-20 23:26:22 INFO     Initializing Binance Futures Testnet client...
+2026-05-20 23:26:23 INFO     Binance Futures Testnet client initialized successfully.
+2026-05-20 23:26:24 INFO     Connection to Binance Futures Testnet verified.
+2026-05-20 23:26:24 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
+2026-05-20 23:26:24 DEBUG    Order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-20 23:26:24 ERROR    Binance API error: 401 - Invalid API-key, IP, or permissions for action
+2026-05-20 23:26:24 ERROR    Order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-05-20 23:29:11 INFO     ==================================================
+2026-05-20 23:29:11 INFO     Trading Bot CLI started
+2026-05-20 23:29:11 INFO     ==================================================
+2026-05-20 23:29:11 INFO     Input validation passed.
+2026-05-20 23:29:11 INFO     Initializing Binance Futures Testnet client...
+2026-05-20 23:29:12 INFO     Binance Futures Testnet client initialized successfully.
+2026-05-20 23:29:13 INFO     Connection to Binance Futures Testnet verified.
+2026-05-20 23:29:13 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
+2026-05-20 23:29:13 DEBUG    Order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-20 23:29:13 ERROR    Binance API error: 401 - Invalid API-key, IP, or permissions for action
+2026-05-20 23:29:13 ERROR    Order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-05-20 23:52:04 INFO     ==================================================
+2026-05-20 23:52:04 INFO     Trading Bot CLI started
+2026-05-20 23:52:04 INFO     ==================================================
+2026-05-20 23:52:04 INFO     Input validation passed.
+2026-05-20 23:52:04 INFO     Initializing Binance Futures Testnet client...
+2026-05-20 23:52:05 INFO     Binance Futures Testnet client initialized successfully.
+2026-05-20 23:52:05 INFO     Connection to Binance Futures Testnet verified.
+2026-05-20 23:52:05 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
+2026-05-20 23:52:05 DEBUG    Order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-20 23:52:06 ERROR    Binance API error: 401 - Invalid API-key, IP, or permissions for action
+2026-05-20 23:52:06 ERROR    Order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-05-20 23:52:16 INFO     ==================================================
+2026-05-20 23:52:16 INFO     Trading Bot CLI started
+2026-05-20 23:52:16 INFO     ==================================================
+2026-05-20 23:52:16 ERROR    Validation error: Stop price is required for STOP_MARKET orders.
+2026-05-20 23:52:43 INFO     ==================================================
+2026-05-20 23:52:43 INFO     Trading Bot CLI started
+2026-05-20 23:52:43 INFO     ==================================================

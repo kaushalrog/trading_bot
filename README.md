@@ -1,19 +1,30 @@
 # Binance Futures Testnet Trading Bot
 
-A Python CLI trading bot for placing **MARKET** and **LIMIT** orders on the Binance Futures Testnet using test funds.
+A Python CLI trading bot for placing **MARKET**, **LIMIT**, and **STOP_MARKET** orders on the Binance Futures Testnet using test funds.
 
 ---
 
 ## Features
 
+### Core
 - Binance Futures Testnet integration
-- MARKET and LIMIT order support
+- **MARKET**, **LIMIT**, and **STOP_MARKET** order support
 - BUY and SELL sides
 - CLI-based execution via `argparse`
 - Comprehensive input validation
 - File and console logging
 - Graceful error handling
 - Clean, modular project structure
+
+### Bonus
+- 🎯 **STOP_MARKET order type** — A third order type with trigger/stop price
+- 🎨 **Enhanced CLI UX** — Powered by `rich`:
+  - Colored, styled terminal output
+  - Interactive guided mode (`--interactive`)
+  - Numbered menus for side and order type selection
+  - Loading spinners during API calls
+  - Confirmation prompt before placing orders
+  - Color-coded BUY (green) / SELL (red) indicators
 
 ---
 
@@ -23,16 +34,16 @@ A Python CLI trading bot for placing **MARKET** and **LIMIT** orders on the Bina
 trading_bot/
 │
 ├── bot/
-│   ├── __init__.py
-│   ├── client.py          # Binance API client wrapper
-│   ├── logging_config.py  # Logging setup (file + console)
-│   ├── orders.py          # Order placement and response formatting
-│   └── validators.py      # Input validation logic
+│   ├── __init__.py          # Package init
+│   ├── client.py            # Binance API client wrapper
+│   ├── logging_config.py    # File + console logging setup
+│   ├── orders.py            # Order placement & response formatting
+│   └── validators.py        # Input validation logic
 │
 ├── logs/
-│   └── trading_bot.log    # Generated at runtime
+│   └── trading_bot.log      # Generated at runtime
 │
-├── cli.py                 # CLI entry point
+├── cli.py                   # Main CLI entry point (argparse + rich)
 ├── README.md
 ├── requirements.txt
 ├── .env.example
@@ -50,7 +61,7 @@ git clone <repo-url>
 cd trading_bot
 ```
 
-### 2. Create a Virtual Environment (optional but recommended)
+### 2. Create a Virtual Environment (recommended)
 
 ```bash
 python3 -m venv venv
@@ -84,16 +95,55 @@ Get your testnet keys from: [https://testnet.binancefuture.com](https://testnet.
 
 ## Usage
 
-### Place a MARKET Order
+### Direct Mode (flags)
+
+#### MARKET Order
 
 ```bash
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
 ```
 
-### Place a LIMIT Order
+#### LIMIT Order
 
 ```bash
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 115000
+```
+
+#### STOP_MARKET Order (Bonus)
+
+```bash
+python cli.py --symbol BTCUSDT --side SELL --type STOP_MARKET --quantity 0.001 --stop-price 100000
+```
+
+### Interactive Mode (Bonus)
+
+```bash
+python cli.py --interactive
+```
+
+This launches a guided experience with prompts, menus, and confirmation:
+
+```
+╔══════════════════════════════════════════════╗
+║  ⚡ Binance Futures Testnet Trading Bot      ║
+╚══════════════════════════════════════════════╝
+
+Interactive Order Builder
+Answer the prompts below to build your order.
+
+Trading Symbol [BTCUSDT]:
+  1. BUY   — Go long
+  2. SELL  — Go short
+Side [BUY]:
+
+  1. MARKET      — Execute at current market price
+  2. LIMIT       — Execute at a specific price
+  3. STOP_MARKET — Trigger market order at stop price
+Order Type [MARKET]:
+
+Quantity [0.001]:
+
+Place this order? [Y/n]:
 ```
 
 ### View Help
@@ -107,30 +157,29 @@ python cli.py --help
 ## Example Output
 
 ```
-========================================
-           ORDER SUMMARY
-========================================
-  Symbol   : BTCUSDT
-  Side     : BUY
-  Type     : MARKET
-  Quantity : 0.001
-========================================
+    📋 Order Summary
+ ━━━━━━━━━━━━━━━━━━━━━━━
+  Symbol          BTCUSDT
+  Side            BUY
+  Type            MARKET
+  Quantity        0.001
 
-========================================
-           ORDER RESPONSE
-========================================
-  Order ID      : 12345678
-  Symbol        : BTCUSDT
-  Side          : BUY
-  Type          : MARKET
-  Status        : FILLED
-  Orig Qty      : 0.001
-  Executed Qty  : 0.001
-  Price         : 0
-  Avg Price     : 114532.40
-========================================
-  ✅ Order placed and filled successfully.
-========================================
+✓ Connected to Binance Futures Testnet
+
+    📊 Order Response
+╭────────────────────────────╮
+│  Order ID      12345678   │
+│  Symbol        BTCUSDT    │
+│  Side          BUY        │
+│  Type          MARKET     │
+│  Status        FILLED     │
+│  Orig Qty      0.001      │
+│  Executed Qty  0.001      │
+│  Price         0          │
+│  Avg Price     114532.40  │
+╰────────────────────────────╯
+
+  ✅ Order filled successfully!
 ```
 
 ---
@@ -143,14 +192,7 @@ All activity is logged to:
 logs/trading_bot.log
 ```
 
-Log entries include:
-
-- API requests and responses
-- Validation results
-- Errors and exceptions
-- Timestamps for every action
-
-Example log output:
+Log entries include timestamps, levels, API requests/responses, and errors:
 
 ```
 2026-05-20 10:00:11 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
@@ -170,18 +212,17 @@ Example log output:
 
 ## Tech Stack
 
-| Tool           | Purpose                    |
-| -------------- | -------------------------- |
-| Python 3       | Core language              |
-| python-binance | Binance API client library |
-| python-dotenv  | Environment variable mgmt  |
-| argparse       | CLI argument parsing       |
-| logging        | Application logging        |
-| rich           | Enhanced terminal output   |
+| Tool           | Purpose                          |
+| -------------- | -------------------------------- |
+| Python 3       | Core language                    |
+| python-binance | Binance API client library       |
+| python-dotenv  | Environment variable management  |
+| argparse       | CLI argument parsing             |
+| logging        | Application logging              |
+| rich           | Enhanced CLI UX, colors, prompts |
 
 ---
 
 ## License
 
 This project is for assessment purposes only.
-# trading_bot
