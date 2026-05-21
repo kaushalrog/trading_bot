@@ -89,7 +89,7 @@ BINANCE_API_KEY=your_api_key_here
 BINANCE_API_SECRET=your_secret_here
 ```
 
-Get your testnet keys from: [https://testnet.binancefuture.com](https://testnet.binancefuture.com)
+Get your demo trading API keys from Binance Demo Trading / Futures Demo environment.
 
 ---
 
@@ -167,17 +167,17 @@ python cli.py --help
 ✓ Connected to Binance Futures Testnet
 
     📊 Order Response
-╭────────────────────────────╮
-│  Order ID      12345678   │
-│  Symbol        BTCUSDT    │
-│  Side          BUY        │
-│  Type          MARKET     │
-│  Status        FILLED     │
-│  Orig Qty      0.001      │
-│  Executed Qty  0.001      │
-│  Price         0          │
-│  Avg Price     114532.40  │
-╰────────────────────────────╯
+╭───────────────────────────────╮
+│  Order ID      12345678       │
+│  Symbol        BTCUSDT        │
+│  Side          BUY            │
+│  Type          MARKET         │
+│  Status        NEW/FILLED     │
+│  Orig Qty      0.001          │
+│  Executed Qty  0.001          │
+│  Price         0              │
+│  Avg Price     114532.40      │
+╰───────────────────────────────╯
 
   ✅ Order filled successfully!
 ```
@@ -222,7 +222,3 @@ Log entries include timestamps, levels, API requests/responses, and errors:
 | rich           | Enhanced CLI UX, colors, prompts |
 
 ---
-
-## License
-
-This project is for assessment purposes only.
