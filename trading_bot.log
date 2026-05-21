@@ -1,14 +1,3 @@
-2026-05-20 23:26:22 INFO     ==================================================
-2026-05-20 23:26:22 INFO     Trading Bot CLI started
-2026-05-20 23:26:22 INFO     ==================================================
-2026-05-20 23:26:22 INFO     Input validation passed.
-2026-05-20 23:26:22 INFO     Initializing Binance Futures Testnet client...
-2026-05-20 23:26:23 INFO     Binance Futures Testnet client initialized successfully.
-2026-05-20 23:26:24 INFO     Connection to Binance Futures Testnet verified.
-2026-05-20 23:26:24 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
-2026-05-20 23:26:24 DEBUG    Order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
-2026-05-20 23:26:24 ERROR    Binance API error: 401 - Invalid API-key, IP, or permissions for action
-2026-05-20 23:26:24 ERROR    Order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
 2026-05-20 23:29:11 INFO     ==================================================
 2026-05-20 23:29:11 INFO     Trading Bot CLI started
 2026-05-20 23:29:11 INFO     ==================================================
@@ -35,6 +24,73 @@
 2026-05-20 23:52:16 INFO     Trading Bot CLI started
 2026-05-20 23:52:16 INFO     ==================================================
 2026-05-20 23:52:16 ERROR    Validation error: Stop price is required for STOP_MARKET orders.
-2026-05-20 23:52:43 INFO     ==================================================
-2026-05-20 23:52:43 INFO     Trading Bot CLI started
-2026-05-20 23:52:43 INFO     ==================================================
+2026-05-21 00:04:49 INFO     ==================================================
+2026-05-21 00:04:49 INFO     Trading Bot CLI started
+2026-05-21 00:04:49 INFO     ==================================================
+2026-05-21 00:04:49 INFO     Input validation passed.
+2026-05-21 00:04:49 INFO     Initializing Binance Futures Testnet client...
+2026-05-21 00:04:50 INFO     Binance Futures Testnet client initialized successfully.
+2026-05-21 00:04:51 INFO     Connection to Binance Futures Testnet verified.
+2026-05-21 00:04:51 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
+2026-05-21 00:04:51 DEBUG    Order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-21 00:04:52 ERROR    Binance API error: 401 - Invalid API-key, IP, or permissions for action
+2026-05-21 00:04:52 ERROR    Order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-05-21 00:15:14 INFO     ==================================================
+2026-05-21 00:15:14 INFO     Trading Bot CLI started
+2026-05-21 00:15:14 INFO     ==================================================
+2026-05-21 00:15:14 INFO     Input validation passed.
+2026-05-21 00:15:14 INFO     Initializing Binance Futures Testnet client...
+2026-05-21 00:15:18 INFO     Binance Futures Testnet client initialized successfully.
+2026-05-21 00:15:19 INFO     Connection to Binance Futures Testnet verified.
+2026-05-21 00:15:19 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
+2026-05-21 00:15:19 DEBUG    Order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-21 00:15:19 ERROR    Binance API error: 400 - Signature for this request is not valid.
+2026-05-21 00:15:19 ERROR    Order failed: APIError(code=-1022): Signature for this request is not valid.
+2026-05-21 00:28:26 INFO     ==================================================
+2026-05-21 00:28:26 INFO     Trading Bot CLI started
+2026-05-21 00:28:26 INFO     ==================================================
+2026-05-21 00:28:26 INFO     Input validation passed.
+2026-05-21 00:28:26 INFO     Initializing Binance Futures Testnet client...
+2026-05-21 00:28:28 INFO     Binance Futures Testnet client initialized successfully.
+2026-05-21 00:28:29 INFO     Connection to Binance Futures Testnet verified.
+2026-05-21 00:28:29 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
+2026-05-21 00:28:29 DEBUG    Order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-21 00:28:30 ERROR    Binance API error: 400 - Signature for this request is not valid.
+2026-05-21 00:28:30 ERROR    Order failed: APIError(code=-1022): Signature for this request is not valid.
+2026-05-21 00:29:19 INFO     ==================================================
+2026-05-21 00:29:19 INFO     Trading Bot CLI started
+2026-05-21 00:29:19 INFO     ==================================================
+2026-05-21 00:29:19 INFO     Input validation passed.
+2026-05-21 00:29:19 INFO     Initializing Binance Futures Testnet client...
+2026-05-21 00:29:20 INFO     Binance Futures Testnet client initialized successfully.
+2026-05-21 00:29:20 INFO     Connection to Binance Futures Testnet verified.
+2026-05-21 00:29:20 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
+2026-05-21 00:29:20 DEBUG    Order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-21 00:29:21 ERROR    Binance API error: 400 - Signature for this request is not valid.
+2026-05-21 00:29:21 ERROR    Order failed: APIError(code=-1022): Signature for this request is not valid.
+2026-05-21 10:12:48 INFO     ==================================================
+2026-05-21 10:12:48 INFO     Trading Bot CLI started
+2026-05-21 10:12:48 INFO     ==================================================
+2026-05-21 10:12:48 INFO     Input validation passed.
+2026-05-21 10:12:48 INFO     Initializing custom Binance Futures Demo client...
+2026-05-21 10:12:48 INFO     Binance Futures Demo client initialized successfully.
+2026-05-21 10:12:48 INFO     Connection to Binance Futures Demo verified.
+2026-05-21 10:12:48 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
+2026-05-21 10:12:48 DEBUG    Order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-21 10:12:48 INFO     Response received: NEW (Order ID: 13170958235)
+2026-05-21 10:12:48 DEBUG    Full API response: {'orderId': 13170958235, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'L9gDWM60jScDBxLQqySYwl', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1779338568777}
+2026-05-21 10:12:48 INFO     Order workflow completed successfully.
+2026-05-21 10:12:48 INFO     Trading Bot CLI finished.
+2026-05-21 10:17:32 INFO     ==================================================
+2026-05-21 10:17:32 INFO     Trading Bot CLI started
+2026-05-21 10:17:32 INFO     ==================================================
+2026-05-21 10:17:32 INFO     Input validation passed.
+2026-05-21 10:17:32 INFO     Initializing custom Binance Futures Demo client...
+2026-05-21 10:17:32 INFO     Binance Futures Demo client initialized successfully.
+2026-05-21 10:17:32 INFO     Connection to Binance Futures Demo verified.
+2026-05-21 10:17:32 INFO     Sending MARKET BUY order for 0.001 BTCUSDT
+2026-05-21 10:17:32 DEBUG    Order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-21 10:17:33 INFO     Response received: NEW (Order ID: 13170967677)
+2026-05-21 10:17:33 DEBUG    Full API response: {'orderId': 13170967677, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'KHte34xNBbsSOwCdCbVxwa', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1779338853031}
+2026-05-21 10:17:33 INFO     Order workflow completed successfully.
+2026-05-21 10:17:33 INFO     Trading Bot CLI finished.
